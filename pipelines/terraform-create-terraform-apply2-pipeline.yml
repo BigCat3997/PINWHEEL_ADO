@@ -32,7 +32,7 @@ extends:
       - checkout: self
       - checkout: terraform-ado
     tfWorkDir: pinwheel-ado/modules/impl/pipeline
-    tfVarsFile: pinwheel-ado/modules/impl/pipeline/environments/${{ parameters.environment }}.tfvars
+    tfVarsFile: environments/${{ parameters.environment }}.tfvars
     orgServiceUrl: $(AZDO_ORG_SERVICE_URL)
     personalAccessToken: $(AZDO_PERSONAL_ACCESS_TOKEN)
     adoProject: $(System.TeamProject)
