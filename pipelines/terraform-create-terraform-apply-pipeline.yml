@@ -33,10 +33,3 @@ extends:
       - checkout: terraform-ado
     tfWorkDir: pinwheel-ado/modules/impl/pipeline
     tfVarsFile: environments/${{ parameters.environment }}.tfvars
-    backendAWSBucket: $(backendAWSBucket)
-    backendAWSKey: pipeline/${{ parameters.environment }}/terraform.tfstate
-    backendAWSDynamoDBTable: $(backendAWSDynamoDBTable)
-    backendAWSRegion: $(AWS_REGION)
-    awsAccessKeyId: $(AWS_ACCESS_KEY_ID)
-    awsSecretAccessKey: $(AWS_SECRET_ACCESS_KEY)
-    awsRegion: $(AWS_REGION)
