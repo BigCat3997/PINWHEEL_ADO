@@ -36,5 +36,5 @@ extends:
     orgServiceUrl: $(AZDO_ORG_SERVICE_URL)
     personalAccessToken: $(AZDO_PERSONAL_ACCESS_TOKEN)
     adoProject: $(System.TeamProject)
-    artifactFeed: terraform-state
+    artifactFeed: bigcat3997
     statePackageName: tfstate-impl-pipeline-${{ parameters.environment }}
