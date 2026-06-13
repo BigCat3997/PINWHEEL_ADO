@@ -33,3 +33,5 @@ extends:
       - checkout: terraform-ado
     tfWorkDir: pinwheel-ado/modules/impl/pipeline
     tfVarsFile: environments/${{ parameters.environment }}.tfvars
+    orgServiceUrl: $(AZDO_ORG_SERVICE_URL)
+    personalAccessToken: $(AZDO_PERSONAL_ACCESS_TOKEN)
